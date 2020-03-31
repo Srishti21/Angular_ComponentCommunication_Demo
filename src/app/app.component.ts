@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ComponentCommunication';
+  timelineStatus = false;
+  
+
+  onTimelineClick(timelineStatus: boolean) {
+    this.timelineStatus = timelineStatus;
+  }
 }
